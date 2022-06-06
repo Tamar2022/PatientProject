@@ -15,6 +15,9 @@ namespace CoronaApp.Test
         public PatientControllerTests()
         {
         }
+
+        //GetPatient_All_ReturnPatient
+
         [Fact]
 
         public async void AddPatient_Success()//GetPatient_All_ReturnPatient
@@ -31,7 +34,7 @@ namespace CoronaApp.Test
 
         [Fact]
 
-        public async void AddPatient_Failed_NullObject()//GetPatient_All_ReturnPatient
+        public async void AddPatient_Failed_NullObject()
         {
 
             _CoronaAppServiceMock.Setup(x => x.PostAsync(null));

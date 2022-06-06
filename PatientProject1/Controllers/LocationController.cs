@@ -33,10 +33,10 @@ namespace PatientProject1.Controllers
             return await _locationService.GetAllByCityAsync(city);
         }
         // GET api/<PatientController>/5
-        [HttpGet("{id}")]
-        public async Task<ActionResult<List<Location>>> GetAsync(int id)
+        [HttpGet("{patientId}")]
+        public async Task<ActionResult<List<Location>>> GetAsync(int patientId)
         {
-            return await _locationService.GetAsync(id);
+            return await _locationService.GetAsync(patientId);
         }
 
         // POST api/<PatientController>
